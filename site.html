@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Austin Hubbard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Noto+Serif&display=swap" rel="stylesheet"> 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  font-family: 'Lexend', sans-serif;
+  padding: 20px;
+  text-align: center;
+  background: #bbe5f2;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+}
+x
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 80px;
+}
+
+
+.border {
+  padding-top: 100px;
+  background-image: url("tiles.png");
+  background-repeat: repeat-x;
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  font-family: 'Lexend', sans-serif;
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+<div class="border">
+</div>
+
+<div class="header">
+    <h1>Austin Hubbard</h1>
+    <p>An algebraic geometry PhD student at the university of Bath supervised by Alastair Craw.</p>
+</div>
+
+<div class="border">
+</div>
+
+  <div class="main flex-grow">
+    <h2>Preprints:</h2>
+    <ol>
+      <li>
+        <a href="https://arxiv.org/abs/2406.04117">All crepant resolutions of hyperpolygon spaces via their Cox rings.</a>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<div class="border footer">
+</div>
+
+</body>
+</html>
